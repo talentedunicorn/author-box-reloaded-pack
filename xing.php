@@ -50,16 +50,6 @@ Thank you for your help and contribution.
 
 */
 
-$this_contact_name = 'Xing'; 				// CHANGE this variable to the service name
-$plugins = get_option('active_plugins');
-$required_plugin = 'author-box-2/authorbox.php';
-if ( !in_array( $required_plugin , $plugins ) ) {
-	$wpfr = '<a href="http://wordpress.org/extend/plugins/author-box-2/" target="_blank">Author Box Reloaded</a>';
-	$dieMessage  = sprintf( 'The %s plugin must be installed and active.', $wpfr );
-	$notice = "<div id=\"message\" class=\"error fade\"><p><strong>".$this_contact_name." Contact</strong></p><p>".$dieMessage."</p></div>\n";
-	add_action('admin_notices', create_function( '', "echo '$notice';" ) );
-}
-
 function xing_authorbox_add_sites( $known_sites ) {					// CHANGE the function prefix name
 	$known_sites['Xing'] = array(													// CHANGE the key name
 		'favicon' => plugin_dir_url( __FILE__ ) . 'images/xing.png',		// CHANGE the image name
