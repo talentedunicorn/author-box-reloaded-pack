@@ -72,7 +72,6 @@ Go to the [Author Box Reloaded's forum](http://wordpress.org/tags/author-box-2?f
 == Screenshots ==
 
 1. The modified User Profile page with some social networks available.
-2. Plugin list with Author Box Reloaded and some `External Contact` plugins. This now requires that you install an [external plugin](http://wordpress.org/extend/plugins/author-box-reloaded-pack/).
 
 
 == Changelog ==

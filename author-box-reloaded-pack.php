@@ -30,7 +30,8 @@ $required_plugin = 'author-box-2/authorbox.php';
 if ( !in_array( $required_plugin , $plugins ) ) {
 	$wpfr = '<a href="http://wordpress.org/extend/plugins/author-box-2/" target="_blank">Author Box Reloaded</a>';
 	$dieMessage  = sprintf( 'The %s plugin must be installed and active.', $wpfr );
-	$notice = "<div id=\"message\" class=\"error fade\"><p><strong> Additional External Contacts</strong></p><p>".$dieMessage."</p></div>\n";
+	$notice = "<div id=\"message\" class=\"error fade\"><p><strong>Author Box Reloaded Pack</strong></p>".
+					"<p><small>External Contact Addons</small></p>".$dieMessage."</p></div>\n";
 	add_action('admin_notices', create_function( '', "echo '$notice';" ) );
 }
 

@@ -1,13 +1,7 @@
 <?php
 /*
-Plugin Name: Author Box Reloaded - Netlog Contact
-Plugin URI: http://wordpress.org/extended/plugins/author-box-2/
-Description: Adds Netlog to your profile. Just need to insert your UserID. Requires Author Box Reloaded 2.0 or greater.
-Version: 1.0
-Author: Lopo Lencastre de Almeida <dev@ipublicis.com>
-Author URI: http://ipublicis.com/
-Donate link: http://smsh.me/7kit
-License: GNU GPL v3 or later
+	Author Box Reloaded Contact Add-on
+	http://wordpress.org/extend/plugins/author-box-reloaded-pack/
 
     Copyright (C) 2010 iPublicis!COM
 
@@ -28,20 +22,15 @@ License: GNU GPL v3 or later
 
 HOW TO:
 
-On the header above:
-
-    1. Change the name in Plugin Name and Description. 
-    2. Change Plugin URI, Version, Author, Author URI and Donate link.
-    3. Keep the rest AS IS
-
-On the code area:
+Change the following:
 
     1. Change the function name but keep the "_authorbox_add_sites" portion.
 		a) We usually use the name text for it, i.e. for "Wordpress.Org" you'll set "wordpress_org" or something like it.
     2. Change the $known_sites key and the "favicon" and "url" variables. 
 		a) The key is used in the profile form so use the same text you used in the Plugin Name in header area.
         b) Don't forget that the $known_site url must have the text "USERNAME" in it in order to work properly.
-    3. Change the add_filter() function to include your "_authorbox_add_sites" function.
+	3. Change the values for  "plugin->author", "plugin->url" and "plugin->donate".
+    4. Change the add_filter() function to include your "_authorbox_add_sites" function.
 
 To make it available to everyone follow the rules defined at [Wordpress.Org](http://http://wordpress.org/extend/plugins/about/).
 This is just another Wordpress plugin that will made some data available for Author Box Reloaded.
@@ -54,6 +43,11 @@ function netlog_authorbox_add_sites( $known_sites ) {					// CHANGE the function
 	$known_sites['Netlog'] = array(														// CHANGE the key name
 		'favicon' => plugin_dir_url( __FILE__ ) . 'images/netlog.png',		// CHANGE the image name
 		'url' => 'http://www.netlog.com/USERNAME',								// CHANGE the service URI 
+		'plugin' => array (
+			'author' => 'Lopo Lencastre de Almeida <dev@ipublicis.com>', 	// CHANGE author name
+			'url' => 'http://ipublicis.com/', 														// CHANGE author uri
+			'donate' => 'http://smsh.me/7kit',													// CHANGE donate link
+		),
   );
   return $known_sites;
 }
