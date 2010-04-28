@@ -1,5 +1,5 @@
 === Author Box Reloaded  Pack ===
-Contributors: ipublicis
+Contributors: ipublicis, Sven Schneider
 Plugin URI: http://wordpress.org/extend/plugins/author-box-reloaded-pack/
 Author: Lopo Lencastre de Almeida - iPublicis.com
 Author URI: http://www.ipublicis.com
