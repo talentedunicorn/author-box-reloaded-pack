@@ -9,7 +9,8 @@ Requires at least: 2.8.0
 Tested up to: 2.9.2
 Stable tag: 1.0
 
-Adds the Author Box Reloaded External Contact plugins. REQUIRES [Author Box Reloaded](http://wordpress.org/extend/plugins/author-box-2/) 2.0.3 or greater.
+Adds the Author Box Reloaded External Contact plugins. 
+REQUIRES [Author Box Reloaded](http://wordpress.org/extend/plugins/author-box-2/) 2.0.3 or greater.
 
 == Description ==
 
@@ -70,7 +71,9 @@ Go to the [Author Box Reloaded's forum](http://wordpress.org/tags/author-box-2?f
 
 == Screenshots ==
 
-1. Plugin list with Author Box Reloaded and some included `External` Contact plugins active. 
+1. The modified User Profile page with some social networks available.
+2. Plugin list with Author Box Reloaded and some `External Contact` plugins. This now requires that you install an [external plugin](http://wordpress.org/extend/plugins/author-box-reloaded-pack/).
+
 
 == Changelog ==
 
