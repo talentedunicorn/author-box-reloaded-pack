@@ -7,7 +7,7 @@ Donate link: http://smsh.me/7kit
 Tags: user profile contacts, user, author, theme, plugin, extra, profile
 Requires at least: 2.8.0
 Tested up to: 2.9.2
-Stable tag: 1.0
+Stable tag: 1.1
 
 Adds the Author Box Reloaded External Contact plugins. 
 REQUIRES [Author Box Reloaded](http://wordpress.org/extend/plugins/author-box-2/) 2.0.3 or greater.
@@ -72,6 +72,7 @@ Go to the [Author Box Reloaded's forum](http://wordpress.org/tags/author-box-2?f
 == Screenshots ==
 
 1. The modified User Profile page with some social networks available.
+2. Plugin list with `External Contact` addons visible.
 
 
 == Changelog ==
