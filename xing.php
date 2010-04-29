@@ -1,7 +1,14 @@
 <?php
 /*
-	Author Box Reloaded Contact Add-on
-	http://wordpress.org/extend/plugins/author-box-reloaded-pack/
+Plugin Name: Author Box Reloaded Xing Contact Addon
+Plugin URI: http://wordpress.org/extend/plugins/author-box-reloaded-pack/
+Description: Adds a new contact field to your profile. Just need to insert your UserID. Requires Author Box Reloaded 2.0 or greater.
+Version: 1.1
+Author: Sven Schneider <schneider.sven@permanentmedia.de>
+Author URI: http://www.permanentmedia.de
+Donate link: http://smsh.me/7kit
+License: GNU GPL v3 or later
+
 
     Copyright (C) 2010 iPublicis!COM
 
@@ -22,11 +29,16 @@
 
 HOW TO:
 
-Change the following:
+Change the following at top:
 
-    1. Change the function name but keep the "_authorbox_add_sites" portion.
+	1. At top the the specific text portion in "Plugin Name", i.e in case of "Wordpress.Org" this is the text to change
+	2. At top change the "Author", "Author URI" and "Donate Link" by your owns. 
+
+Change the following below:
+
+    1. The function name but keep the "_authorbox_add_sites" portion.
 		a) We usually use the name text for it, i.e. for "Wordpress.Org" you'll set "wordpress_org" or something like it.
-    2. Change the $known_sites key and the "favicon" and "url" variables. 
+    2. The $known_sites key and the "favicon" and "url" variables: 
 		a) The key is used in the profile form so use the same text you used in the Plugin Name in header area.
         b) Don't forget that the $known_site url must have the text "USERNAME" in it in order to work properly.
 	3. Change the values for  "plugin->author", "plugin->url" and "plugin->donate".
@@ -39,12 +51,28 @@ Thank you for your help and contribution.
 
 */
 
+/**
+ * Dont touch this code below
+ */
+$plugins = get_option( 'active_plugins' );
+$required_plugin = 'author-box-2/authorbox.php';
+if ( !in_array( $required_plugin , $plugins ) ) {
+	$wpfr = '<a href="http://wordpress.org/extend/plugins/author-box-2/" target="_blank">Author Box Reloaded</a>';
+	$dieMessage  = sprintf( __( 'The %s plugin must be installed and active.', 'author-box-2' ), $wpfr );
+	$notice = "<div id=\"message\" class=\"error fade\"><p><strong>Author Box Reloaded Pack</strong></p>".
+					"<p>".$dieMessage."</p></div>\n";
+	add_action( 'admin_notices', create_function( '', "echo '$notice';" ) );
+} 
+
+/**
+ * Section to modify
+ */
 function xing_authorbox_add_sites( $known_sites ) {					// CHANGE the function prefix name
 	$known_sites['Xing'] = array(													// CHANGE the key name
 		'favicon' => plugin_dir_url( __FILE__ ) . 'images/xing.png',		// CHANGE the image name
 		'url' => 'http://www.xing.com/profile/USERNAME',					// CHANGE the service URI 
 		'plugin' => array (
-			'author' => 'Lopo Lencastre de Almeida <dev@ipublicis.com>', 	// CHANGE author name
+			'author' => 'Sven Schneider <dev@ipublicis.com>', 	// CHANGE author name
 			'url' => 'http://ipublicis.com/', 														// CHANGE author uri
 			'donate' => 'http://smsh.me/7kit',													// CHANGE donate link
 		),
