@@ -3,7 +3,7 @@
 Plugin Name: Author Box Reloaded Google+ Contact Addon
 Plugin URI: http://wordpress.org/extend/plugins/author-box-reloaded-pack/
 Description: Adds a new contact field to your profile. Just need to insert your UserID. Requires Author Box Reloaded 2.0 or greater.
-Version: 1.1.1
+Version: 1.1.2
 Author: Lopo Lencastre de Almeida - iPublicis.com
 Author URI: http://www.ipublicis.com
 Donate link: http://smsh.me/7kit
@@ -68,7 +68,7 @@ if ( !in_array( $required_plugin , $plugins ) ) {
  * Section to modify
  */
 function googleplus_authorbox_add_sites( $known_sites ) {					// CHANGE the function prefix name
-	$known_sites['Google+'] = array(															// CHANGE the key name
+	$known_sites['GooglePlus'] = array(														// CHANGE the key name
 		'favicon' => plugin_dir_url( __FILE__ ) . 'images/googleplus.png',		// CHANGE the image name
 		'url' => 'http://plus.google.com/USERNAME',										// CHANGE the service URI 
 		'plugin' => array (
