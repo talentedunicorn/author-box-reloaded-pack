@@ -4,22 +4,22 @@ Plugin URI: http://wordpress.org/extend/plugins/author-box-reloaded-pack/
 Author: Lopo Lencastre de Almeida - iPublicis.com
 Author URI: http://www.ipublicis.com
 Donate link: http://smsh.me/7kit
-Tags: user profile contacts, user, author, theme, plugin, extra, profile
+Tags: user profile contacts, user, author, theme, plugin, extra, profile, social network profile
 Requires at least: 2.8.0
-Tested up to: 2.9.2
-Stable tag: 1.1
+Tested up to: 3.2.1
+Stable tag: 1.1.1
 
 Adds the Author Box Reloaded External Contact plugins. 
 REQUIRES [Author Box Reloaded](http://wordpress.org/extend/plugins/author-box-2/) 2.0.3 or greater.
 
 == Description ==
 
-It allows the author to define links to the external websites like Twitter, Identi.ca, Facebook, Netlog, LinkedIn, Xing, Drupal Association and Wordpress.Org (included) when using [Author Box Reloaded](http://wordpress.org/extend/plugins/author-box-2/). At the front-end those will appear as clickable icons.
+It allows the author to define links to the external websites like Twitter, Identi.ca, Facebook, Netlog, LinkedIn, Xing, Drupal Association, Vimeo, BranchOut, Youtube, Google+ and Wordpress.Org (included) when using [Author Box Reloaded](http://wordpress.org/extend/plugins/author-box-2/). At the front-end those will appear as clickable icons.
 
 Those external websites are very simple plugins and you can check the included ones to see how to make your owns. 
 This was a needed move because it is more probable that we have more `ABR3 External Contact` plugins developed by third parties to be included than to have too much development on original Author Box Reloaded.
 
-<center>Check out the other [Wordpress plugins](http://profiles.wordpress.org/ipublicis) by the same author.</center>
+<center>Check out the other [Wordpress plugins](http://profiles.wordpress.org/users/ipublicis/) by the same author.</center>
 
 == Installation ==
 
@@ -76,6 +76,14 @@ Go to the [Author Box Reloaded's forum](http://wordpress.org/tags/author-box-2?f
 
 
 == Changelog ==
+
+= 1.1.1 =
+
+* Added Vimeo, BranchOut, Youtube and Google+.
+
+= 1.1 = 
+
+* Added several social networks. Now Facebook, Xing, Drupal Association Twitter, Wordpress.Org, Identi.ca and LinkedIn are available.
 
 = 1.0 =
 

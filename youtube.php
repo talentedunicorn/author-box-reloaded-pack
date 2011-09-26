@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Author Box Reloaded Xing Contact Addon
+Plugin Name: Author Box Reloaded Youtube Contact Addon
 Plugin URI: http://wordpress.org/extend/plugins/author-box-reloaded-pack/
 Description: Adds a new contact field to your profile. Just need to insert your UserID. Requires Author Box Reloaded 2.0 or greater.
 Version: 1.1.1
-Author: Sven Schneider <schneider.sven@permanentmedia.de>
-Author URI: http://www.permanentmedia.de
+Author: Lopo Lencastre de Almeida - iPublicis.com
+Author URI: http://www.ipublicis.com
 Donate link: http://smsh.me/7kit
 License: GNU GPL v3 or later
 
@@ -67,18 +67,18 @@ if ( !in_array( $required_plugin , $plugins ) ) {
 /**
  * Section to modify
  */
-function xing_authorbox_add_sites( $known_sites ) {					// CHANGE the function prefix name
-	$known_sites['Xing'] = array(													// CHANGE the key name
-		'favicon' => plugin_dir_url( __FILE__ ) . 'images/xing.png',		// CHANGE the image name
-		'url' => 'http://www.xing.com/profile/USERNAME',					// CHANGE the service URI 
+function youtube_authorbox_add_sites( $known_sites ) {						// CHANGE the function prefix name
+	$known_sites['Youtube'] = array(															// CHANGE the key name
+		'favicon' => plugin_dir_url( __FILE__ ) . 'images/youtube.png',			// CHANGE the image name
+		'url' => 'http://www.youtube.com/user/USERNAME',							// CHANGE the service URI 
 		'plugin' => array (
-			'author' => 'Sven Schneider <dev@ipublicis.com>', 	// CHANGE author name
+			'author' => 'Lopo Lencastre de Almeida <dev@ipublicis.com>', 	// CHANGE author name
 			'url' => 'http://ipublicis.com/', 														// CHANGE author uri
 			'donate' => 'http://smsh.me/7kit',													// CHANGE donate link
 		),
   );
   return $known_sites;
 }
-add_filter('authorbox_known_sites','xing_authorbox_add_sites',10,1);		// CHANGE the function prefix name
+add_filter('authorbox_known_sites','youtube_authorbox_add_sites',10,1);		// CHANGE the function prefix name
 
 ?>
