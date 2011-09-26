@@ -3,7 +3,7 @@
 Plugin Name: Author Box Reloaded Netlog Contact Addon
 Plugin URI: http://wordpress.org/extend/plugins/author-box-reloaded-pack/
 Description: Adds a new contact field to your profile. Just need to insert your UserID. Requires Author Box Reloaded 2.0 or greater.
-Version: 1.1
+Version: 1.1.1
 Author: Lopo Lencastre de Almeida - iPublicis.com
 Author URI: http://www.ipublicis.com
 Donate link: http://smsh.me/7kit
