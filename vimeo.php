@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Author Box Reloaded Xing Contact Addon
+Plugin Name: Author Box Reloaded Vimeo Contact Addon
 Plugin URI: http://wordpress.org/extend/plugins/author-box-reloaded-pack/
 Description: Adds a new contact field to your profile. Just need to insert your UserID. Requires Author Box Reloaded 2.0 or greater.
 Version: 1.1.2
@@ -66,18 +66,18 @@ if ( !in_array( $required_plugin , $plugins ) ) {
 /**
  * Section to modify
  */
-function xing_authorbox_add_sites( $known_sites ) {					// CHANGE the function prefix name
-	$known_sites['Xing'] = array(													// CHANGE the key name
-		'favicon' => plugin_dir_url( __FILE__ ) . 'images/xing.png',		// CHANGE the image name
-		'url' => 'http://www.xing.com/profile/USERNAME',					// CHANGE the service URI 
+function vimeo_authorbox_add_sites( $known_sites ) {							// CHANGE the function prefix name
+	$known_sites['Vimeo'] = array(																// CHANGE the key name
+		'favicon' => plugin_dir_url( __FILE__ ) . 'images/vimeo.png',				// CHANGE the image name
+		'url' => 'http://vimeo.com/USERNAME',												// CHANGE the service URI 
 		'plugin' => array (
-			'author' => 'Sven Schneider <dev@ipublicis.com>', 	// CHANGE author name
+			'author' => 'Lopo Lencastre de Almeida <dev@ipublicis.com>', 	// CHANGE author name
 			'url' => 'http://ipublicis.com/', 														// CHANGE author uri
 			'donate' => 'http://smsh.me/7kit',													// CHANGE donate link
 		),
   );
   return $known_sites;
 }
-add_filter('authorbox_known_sites','xing_authorbox_add_sites',10,1);		// CHANGE the function prefix name
+add_filter('authorbox_known_sites','vimeo_authorbox_add_sites',10,1);		// CHANGE the function prefix name
 
 ?>
