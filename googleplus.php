@@ -51,19 +51,6 @@ Thank you for your help and contribution.
 */
 
 /**
- * Dont touch this code below
- */
-$plugins = get_option( 'active_plugins' );
-$required_plugin = 'author-box-2/authorbox.php';
-if ( !in_array( $required_plugin , $plugins ) ) {
-	$wpfr = '<a href="http://wordpress.org/extend/plugins/author-box-2/" target="_blank">Author Box Reloaded</a>';
-	$dieMessage  = sprintf( __( 'The %s plugin must be installed and active.', 'author-box-2' ), $wpfr );
-	$notice = "<div id=\"message\" class=\"error fade\"><p><strong>Author Box Reloaded Pack</strong></p>".
-					"<p>".$dieMessage."</p></div>\n";
-	add_action( 'admin_notices', create_function( '', "echo '$notice';" ) );
-} 
-
-/**
  * Section to modify
  */
 function googleplus_authorbox_add_sites( $known_sites ) {					// CHANGE the function prefix name
