@@ -3,13 +3,13 @@
 Plugin Name: Author Box Reloaded Pack - External Contact Addons
 Plugin URI: http://wordpress.org/extend/plugins/author-box-reloaded-pack/
 Description: Adds External Contact fields to your profile. Just need to insert your UserID. Requires Author Box Reloaded 2.0 or greater.
-Version: 1.1.1
+Version: 1.1.2
 Author: Lopo Lencastre de Almeida - iPublicis.com
 Author URI: http://www.ipublicis.com
 Donate link: http://smsh.me/7kit
 License: GNU GPL v3 or later
 
-    Copyright (C) 2010, 2011 iPublicis!COM
+    Copyright (C) 2010, 2012 iPublicis!COM
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
