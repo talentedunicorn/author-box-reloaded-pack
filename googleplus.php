@@ -54,7 +54,7 @@ Thank you for your help and contribution.
  * Section to modify
  */
 function googleplus_authorbox_add_sites( $known_sites ) {					// CHANGE the function prefix name
-	$known_sites['Google+'] = array(															// CHANGE the key name
+	$known_sites['Google Plus'] = array(															// CHANGE the key name
 		'favicon' => plugin_dir_url( __FILE__ ) . 'images/googleplus.png',		// CHANGE the image name
 		'url' => 'http://plus.google.com/USERNAME',										// CHANGE the service URI 
 		'plugin' => array (
