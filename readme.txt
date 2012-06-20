@@ -6,7 +6,7 @@ Author URI: http://www.ipublicis.com
 Donate link: http://smsh.me/7kit
 Tags: user profile contacts, user, author, theme, plugin, extra, profile, social network profile
 Requires at least: 2.8.0
-Tested up to: 3.3.1
+Tested up to: 3.4
 Stable tag: 1.1.2
 
 Adds the Author Box Reloaded External Contact plugins. 
